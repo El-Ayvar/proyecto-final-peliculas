@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    align-items:center;
+    background: url(../assets/img/fiphone.jpg);
+    background-color: #111;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    font-family:sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: "Honk", sans-serif;
+    font-size: 1.1rem;
+    position: sticky;
+    bottom: 200rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 22vh;
+}
+
+#title-movie {
+    margin: 1rem 0rem 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-size: 40px;
+    color: #fafafa;
+    text-shadow: 0 0 10px #00ff11, 0 0 20px #51ff00, 0 0 30px #ff00ee;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#contenedor-input {
+    justify-content: space-around;
+    width: 95vw;
+    font-family: "Honk", sans-serif;
+    display: flex;
+}
+
+.sub-movie {
+    margin: 1rem 0rem 1rem 0rem;
+    font-size: 0.9rem;
+    color: #0e0909;
+    text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
+}
+
+.info-movie {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    color: #000000;
+    text-shadow: 0 0 5px #fafafa, 0 0 5px #ffffff, 0 0 5px #f6f6f6;
+}
+
+#pelicula-input {
+    width: auto;
+    opacity: 0.5;
+}
+
+button {
+    cursor: pointer;
+    opacity: 0.7;
+    width: 13vw;
+}
+
+#poster {
+    display: none;
+    width: 23rem;
+}
+
+#banner {
+    width: 23rem;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 101vw;
+    height: 101vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+    transition: background-image 0.5s ease-in-out;
+}
+
+#box-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#banner {
+    margin-top: 2rem;
+    width: 90vw;
+}
+
+footer {
+    color:#ffffff;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
+    background-color: #272727;
+    opacity: 0.8;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 2rem;
+    bottom: 0rem;
+    font-size: 0.5rem;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 0.8rem;
+    cursor: pointer;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+
+
+#info-personal {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#redes-sociales {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
