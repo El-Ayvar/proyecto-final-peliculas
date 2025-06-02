@@ -20,7 +20,7 @@ body {
 
 header {
     font-family: "Honk", sans-serif;
-    font-size: 1.1rem;
+    font-size: 3.7vw;
     position: sticky;
     bottom: 200rem;
     display: flex;
@@ -37,7 +37,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    font-size: 40px;
+    font-size: 10vw;
     color: #fafafa;
     text-shadow: 0 0 10px #00ff11, 0 0 20px #51ff00, 0 0 30px #ff00ee;
 }
@@ -59,20 +59,20 @@ main {
 
 .sub-movie {
     margin: 1rem 0rem 1rem 0rem;
-    font-size: 0.9rem;
+    font-size: 3vw;
     color: #0e0909;
     text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
 
 .info-movie {
-    margin-bottom: 0.3rem;
-    font-size: 1rem;
+    margin-bottom: 1vw;
+    font-size: 3vw;
     color: #000000;
-    text-shadow: 0 0 5px #fafafa, 0 0 5px #ffffff, 0 0 5px #f6f6f6;
+    text-shadow: 0 0 2px #fafafa, 0 0 2px #ffffff, 0 0 2px #f6f6f6;
 }
 
 #pelicula-input {
-    width: auto;
+    width: 35vw;
     opacity: 0.5;
 }
 
@@ -126,14 +126,14 @@ footer {
     width: 100vw;
     height: 2rem;
     bottom: 0rem;
-    font-size: 0.5rem;
+    font-size: 1.8vw;
     justify-content: space-around;
 }
 
 .logo {
-    width: 0.8rem;
+    width: 2.5vw;
     cursor: pointer;
-    margin: 0rem 0.5rem 0rem 0.5rem;
+    margin: 0rem 0.5rem 0rem 0rem;
 }
 
 
