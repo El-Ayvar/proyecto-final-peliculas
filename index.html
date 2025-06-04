@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-Tablet.css">
     <script src="js/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
@@ -11,29 +12,34 @@
     <title>Peliculas</title>
 </head>
 <body>
+    <div class="banner" id="movie-banner"></div>
+    <div class="poster" id="movie-poster"></div>
     <header>
-        <h1>ZONA DE PELICULAS AYVARPLAY</h1>
+        <h1>ZONA DE PELICULAS AyvarPlay</h1>
         <div id="contenedor-input">
             <p>¿Què pelicula buscas?</p>
             <input 
-            type="text"
-            name="pelicula-input"
-            id="pelicula-input"
-            placeholder="Escribe el nombre de la pelicula">
+                type="text"
+                name="pelicula-input"
+                id="pelicula-input"
+                placeholder="Escribe el nombre">
             <button type="button" id="search-btn">Buscar</button>
         </div>
     </header>
     <main id="container">
         <article id="pelicula-info"></article>
-        <div class="banner" id="movie-banner"></div>
     </main>
     <footer>
         <div id="info-personal">
             <p>
                 Desarrollador: Jorge Jacinto Ayvar
             </p>
-            <p>Profesor: César Lópes Godoy</p>
-            <p>Proyecto escolar</p>
+            <p>
+                Profesor: César Lópes Godoy
+            </p>
+            <p>
+                Proyecto escolar
+            </p>
         </div>
         <div id="redes-sociales">
             <p class="box-social">Instagram: JacintoAyvar

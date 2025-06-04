@@ -29,8 +29,7 @@ const searchPelicula = () => {
         showPelicula(data.results[0]);
     })
     .catch(error => {
-        document.querySelector("#pelicula-info").innerHTML = `<p>${error.message}</p>`;
-        document.querySelector("#movie-banner").style.backgroundImage = 'none';
+        document.querySelector("#pelicula-info").innerHTML = `<p id="mensaje-error">${error.message}</p>`;
     });
 };
 
@@ -38,23 +37,34 @@ const baseImageUrl = "https://image.tmdb.org/t/p/original";
 
 function showPelicula(pelicula) {
     const peliculaInfo = document.querySelector("#pelicula-info");
-    const bannerElement = document.querySelector("#movie-banner");
-    const posterUrl = pelicula.poster_path ? `${baseImageUrl}${pelicula.poster_path}` : 'https://via.placeholder.com/300x450?text=No+Poster';
-    const bannerUrl = pelicula.backdrop_path ? `${baseImageUrl}${pelicula.backdrop_path}` : posterUrl;
+    const banner = document.querySelector("#movie-banner");
+    const poster = document.querySelector("#movie-poster");
+        
+    const posterUrl = pelicula.poster_path 
+        ? `${baseImageUrl}${pelicula.poster_path}` 
+        : 'https://via.placeholder.com/300x450?text=No+Poster';
     
-    bannerElement.style.backgroundImage = `url(${posterUrl})`;
+    const bannerUrl = pelicula.backdrop_path 
+        ? `${baseImageUrl}${pelicula.backdrop_path}` 
+        : posterUrl;
+
     
+    poster.style.backgroundImage = `url(${posterUrl})`;
+     
+    banner.style.backgroundImage = `url(${bannerUrl})`;
+    
+
     peliculaInfo.innerHTML = `
         <h2 id="title-movie">${pelicula.title.toUpperCase()}</h2>
-        <p class=info-movie><strong class="sub-movie">Título original: </strong> ${pelicula.original_title} </p>
-        <p class=info-movie><strong class="sub-movie">Año: </strong> ${pelicula.release_date ? pelicula.release_date.split("-")[0] : 'Desconocido'} </p>
-        <p class=info-movie><strong class="sub-movie">Popularidad: </strong> ${pelicula.popularity} </p>
-        <p class=info-movie><strong class="sub-movie">Calificación: </strong> ${pelicula.vote_average}/10 </p>
-        <p id="sinopsis" class=info-movie><strong class="sub-movie">Sinopsis: </strong> ${pelicula.overview || 'No disponible'}</p>
-        <p id="box-banner"> <img id="banner" src="${bannerUrl}" alt="Póster de ${pelicula.title}"> </p>
-        <img id="poster" src="${posterUrl}" alt="Póster de ${pelicula.title}">
+        <main id="box-complet"> <div id="box-informacion">
+        <p class="info-movie"><span class="sub-movie">Título original: </span> ${pelicula.original_title}</p>
+        <p class="info-movie"><span class="sub-movie">Año: </span> ${pelicula.release_date ? pelicula.release_date.split("-")[0] : 'Desconocido'}</p>
+        <p class="info-movie"><span class="sub-movie">Popularidad: </span> ${pelicula.popularity}</p>
+        <p class="info-movie"><span class="sub-movie">Calificación: </span> ${pelicula.vote_average}/10</p>
+        <p class="info-movie"><span class="sub-movie">Genero: </span> ${pelicula.gen}/10</p>
+        <p id="sinopsis" class="info-movie"><span class="sub-movie">Sinopsis: </span> ${pelicula.overview || 'No disponible'}</p> </div>
+        <div id="box-banner"> <img id="banner" src="${bannerUrl}" alt="Banner de ${pelicula.title}"> </div>
+        <div id="box-poster"> <img id="poster" src="${posterUrl}" alt="Poster de ${pelicula.title}"> </div> </main> 
     `;
 }
-
-
 btnSearch.addEventListener("click", searchPelicula);
