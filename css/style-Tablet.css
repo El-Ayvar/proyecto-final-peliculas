@@ -19,13 +19,11 @@
     
     #box-complet {
         display: flex;
-        border: solid;
         flex-direction: row;
         margin: 0rem 0rem 15vw 0rem;
     }
     
     #box-informacion {
-        border: solid;
         display: flex;
         flex-direction: column;
     }
@@ -51,9 +49,9 @@
     }
     
     #mensaje-error {
-        bottom: 40vw;
+        bottom: 20rem;
     }
-    
+
     .poster {
         display: none;
     }

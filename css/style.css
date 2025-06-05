@@ -15,9 +15,6 @@
     transition: background-image 0.5s ease-in-out;
     width: 101vw;
     z-index: -1; 
-}
-
-.banner {
     display: none;
 }
 
@@ -35,7 +32,7 @@ body {
     flex-direction: column;
     font-family:sans-serif;
     font-size: 16px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     overflow-x: hidden;
 }
 
@@ -53,6 +50,10 @@ body {
     justify-content: center;
 }
 
+#box-informacion{
+    padding: 0rem 0rem 0rem 1vw;
+}
+
 button {
     align-items: center;
     border-radius: 4rem;
@@ -66,6 +67,7 @@ button {
 }
 
 #contenedor-input {
+    align-items: center;
     display: flex;
     font-family: "Honk", sans-serif;
     justify-content: space-around;
@@ -81,6 +83,7 @@ footer {
     height: 8vh;
     justify-content: space-around;
     opacity: 0.8;
+    padding: 0rem 0rem 1vw 0rem;
     position: fixed;
     text-shadow: 0 0 5px #000000, 0 0 5px #000000, 0 0 5px #000000;
     width: 100vw;

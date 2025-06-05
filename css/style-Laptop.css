@@ -1,0 +1,75 @@
+@media (min-width: 769px) {
+    
+    #banner {
+        background: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%),
+    }
+    
+    body {
+        background-image: url("../assets/img/fondo7.gif");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #box-informacion {
+        width: 55vw;
+    }
+    
+    button {
+        font-size: 2.3vw;
+        width: 10vw;
+    }
+    
+    #contenedor-input {
+        width: 77vw;
+    }
+        
+    footer {
+        font-size: 1vw;
+        height: 6vh;
+        padding: 0vw;
+    }
+
+    header {
+        font-size: 3.3vw;
+    }
+
+    header p {
+        font-size: 4vw;
+    }
+    
+    #info-personal {
+        align-items: center;
+        flex-direction: row;
+        width: 45vw;
+    }
+    
+    .info-movie {
+        font-size: 2vw;
+    }
+    
+    .logo {
+        margin: 0 0 0 0.2vw;
+        width: 1.8vw;
+    }
+    
+    #pelicula-input{
+        width: 27vw;
+    }
+
+    #poster {
+        width: 35vw;
+    }
+          
+    #redes-sociales {
+        flex-direction: row;
+        width: 45vw;
+    }
+
+    .sub-movie {
+        font-size: 2vw;
+    }
+
+    #title-movie {
+        font-size: 7vw;
+    }
+}

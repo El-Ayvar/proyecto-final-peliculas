@@ -53,6 +53,9 @@ function showPelicula(pelicula) {
      
     banner.style.backgroundImage = `url(${bannerUrl})`;
     
+    document.querySelector(".banner").style.backgroundImage = `linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.1) 150%),url(${bannerUrl})`;
+
+    
 
     peliculaInfo.innerHTML = `
         <h2 id="title-movie">${pelicula.title.toUpperCase()}</h2>
