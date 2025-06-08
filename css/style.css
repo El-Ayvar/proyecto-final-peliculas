@@ -184,9 +184,10 @@ main {
     align-items: center;
     color: #fafafa;
     display: flex;
-    font-size: 10vw;
+    font-size: 9vw;
     justify-content: center;
     margin: 1rem 0rem 1rem 0rem;
     text-shadow: 0 0 10px #00ff11, 0 0 20px #51ff00, 0 0 30px #ff00ee;
+    text-align: center;
     width: 100vw;
 }

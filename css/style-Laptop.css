@@ -51,6 +51,11 @@
         margin: 0 0 0 0.2vw;
         width: 1.8vw;
     }
+
+    #mensaje-error {
+        top: 0vw;
+        border: solid;
+    }
     
     #pelicula-input{
         width: 27vw;
