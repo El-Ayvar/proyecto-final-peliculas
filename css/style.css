@@ -28,6 +28,7 @@ body {
     background: url(../assets/img/fiphone.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     font-family:sans-serif;
