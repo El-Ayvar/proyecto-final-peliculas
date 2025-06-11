@@ -47,6 +47,7 @@ body {
 
 .box-social {
     align-items: center;
+    color: white;
     display: flex;
     justify-content: center;
 }
@@ -73,6 +74,11 @@ button {
     font-family: "Honk", sans-serif;
     justify-content: space-around;
     width: 95vw;
+}
+
+#Error-ingresa {
+    font-family:"honk", sans-serif;
+    font-size: 4vw;
 }
 
 footer {

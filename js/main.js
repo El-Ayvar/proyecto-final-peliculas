@@ -2,10 +2,16 @@ const btnSearch = document.querySelector("#search-btn");
 const resultado = document.querySelector('#resultado');
 const loader = document.querySelector('#loader');
 
+document.getElementById("pelicula-input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        document.getElementById("search-btn").click();
+    }
+})
+
 const searchPelicula = () => {
     const peliculaName = document.querySelector("#pelicula-input").value.trim();
     if (!peliculaName) {
-        document.querySelector("#pelicula-info").innerHTML = `<p>Por favor ingresa un nombre de película</p>`;
+        document.querySelector("#pelicula-info").innerHTML = `<p id="Error-ingresa">Por favor ingresa un nombre de película</p>`;
         return;
     }
 
