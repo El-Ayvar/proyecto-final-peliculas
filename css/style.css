@@ -118,10 +118,9 @@ header p {
 }
 
 .info_movie {
-    font-size: 3vw;
-    color: #000000;
+    font-family: "honk", sans-serif;
+    font-size: 4vw;
     margin-bottom: 1vw;
-    text-shadow: 0 0 2px #fafafa, 0 0 2px #ffffff, 0 0 2px #f6f6f6;
 }
 
 #info_personal {
@@ -190,8 +189,7 @@ main {
 }
 
 .sub_movie {
-    color: #0e0909;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 1rem 0rem 1rem 0rem;
     text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }

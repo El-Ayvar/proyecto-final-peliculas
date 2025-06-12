@@ -31,6 +31,7 @@ const searchPelicula = () => {
         return response.json();
     })
     .then(data => {
+        console.log(data)
         if (data.results.length === 0) {
             throw new Error("No se encontraron resultados");
         }
@@ -80,8 +81,8 @@ function showPelicula(pelicula) {
             <p class="info_movie"><span class="sub_movie">Año: </span> ${pelicula.release_date ? pelicula.release_date.split("-")[0] : 'Desconocido'}</p>
             <p class="info_movie"><span class="sub_movie">Popularidad: </span> ${pelicula.popularity}</p>
             <p class="info_movie"><span class="sub_movie">Calificación: </span> ${pelicula.vote_average}/10</p>
-            <p class="info_movie"><span class="sub_movie">Genero: </span> ${pelicula.gen}/10</p>
-            <p id="sinopsis" class="info-movie"><span class="sub_movie">Sinopsis: </span> ${pelicula.overview || 'No disponible'}</p> </div>
+            <p class="info_movie"><span class="sub_movie">Lenguaje: </span> ${pelicula.original_language}</p>
+            <p id="sinopsis" class="info_movie"><span class="sub_movie">Sinopsis: </span> ${pelicula.overview || 'No disponible'}</p> </div>
             <div id="box_banner"> <img id="banner" src="${bannerUrl}" alt="Banner de ${pelicula.title}"> </div>
             <div id="box_poster"> <img id="poster" src="${posterUrl}" alt="Poster de ${pelicula.title}"> </div> </main> 
         `;
