@@ -12,23 +12,23 @@
         display: block;
     }
     
-    #box-banner {
+    #box_banner {
         display: none;
     }
     
     
-    #box-complet {
+    #box_complet {
         display: flex;
         flex-direction: row;
         margin: 0rem 0rem 15vw 0rem;
     }
     
-    #box-informacion {
+    #box_informacion {
         display: flex;
         flex-direction: column;
     }
     
-    #box-poster {
+    #box_poster {
         display: flex;
         width: 40vw;
         justify-content: center;
@@ -40,7 +40,7 @@
         font-size: 3.5vw;
     }
         
-    #contenedor-input {
+    #contenedor_input {
         align-items: center;
     }
 
@@ -48,7 +48,7 @@
         height: 13vh;
     }
     
-    #mensaje-error {
+    #mensaje_error {
         bottom: 20rem;
     }
 
@@ -63,7 +63,7 @@
         align-items: center;
     }
     
-    #pelicula-input {
+    #pelicula_input {
         width: 30vw;
         height: 7vh;
         font-size: 3vw;

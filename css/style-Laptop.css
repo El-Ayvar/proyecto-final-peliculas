@@ -10,7 +10,7 @@
         background-position: center;
     }
     
-    #box-informacion {
+    #box_informacion {
         width: 55vw;
     }
     
@@ -19,7 +19,7 @@
         width: 10vw;
     }
     
-    #contenedor-input {
+    #contenedor_input {
         width: 77vw;
     }
         
@@ -37,13 +37,13 @@
         font-size: 4vw;
     }
     
-    #info-personal {
+    #info_personal {
         align-items: center;
         flex-direction: row;
         width: 45vw;
     }
     
-    .info-movie {
+    .info_movie {
         font-size: 2vw;
     }
     
@@ -52,11 +52,11 @@
         width: 1.8vw;
     }
 
-    #mensaje-error {
+    #mensaje_error {
         top: 0vw;
     }
     
-    #pelicula-input{
+    #pelicula_input{
         width: 27vw;
     }
 
@@ -64,16 +64,16 @@
         width: 35vw;
     }
           
-    #redes-sociales {
+    #redes_sociales {
         flex-direction: row;
         width: 45vw;
     }
 
-    .sub-movie {
+    .sub_movie {
         font-size: 2vw;
     }
 
-    #title-movie {
+    #title_movie {
         font-size: 7vw;
     }
 }

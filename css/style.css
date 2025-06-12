@@ -37,7 +37,7 @@ body {
     overflow-x: hidden;
 }
 
-#box-banner {
+#box_banner {
     align-items: center;
     display: flex;
     margin: 0rem 0rem 15vw 0rem;
@@ -45,14 +45,14 @@ body {
     width: 100vw;
 }
 
-.box-social {
+.box_social {
     align-items: center;
     color: white;
     display: flex;
     justify-content: center;
 }
 
-#box-informacion{
+#box_informacion{
     padding: 0rem 0rem 0rem 1vw;
 }
 
@@ -68,7 +68,7 @@ button {
     width: 13vw;
 }
 
-#contenedor-input {
+#contenedor_input {
     align-items: center;
     display: flex;
     font-family: "Honk", sans-serif;
@@ -76,7 +76,7 @@ button {
     width: 95vw;
 }
 
-#Error-ingresa {
+#Error_ingresa {
     font-family:"honk", sans-serif;
     font-size: 4vw;
 }
@@ -117,14 +117,14 @@ header p {
     display: none;
 }
 
-.info-movie {
+.info_movie {
     font-size: 3vw;
     color: #000000;
     margin-bottom: 1vw;
     text-shadow: 0 0 2px #fafafa, 0 0 2px #ffffff, 0 0 2px #f6f6f6;
 }
 
-#info-personal {
+#info_personal {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
@@ -148,13 +148,13 @@ main {
     justify-content: space-between;
 }
 
-#mensaje-error {
+#mensaje_error {
     font-family: "Honk", sans-serif;
     font-size: 6vw;
     position: relative;
 }
 
-#pelicula-input {
+#pelicula_input {
     box-shadow: 3px 4px 6px rgba(0, 0, 0, 100);
     border-radius: 4rem;
     font-family: "honk", sans-serif;
@@ -182,21 +182,21 @@ main {
     display: none;
 }
 
-#redes-sociales {
+#redes_sociales {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.sub-movie {
+.sub_movie {
     color: #0e0909;
     font-size: 3vw;
     margin: 1rem 0rem 1rem 0rem;
     text-shadow: 0 0 2px #ffffff, 0 0 2px #ffffff, 0 0 2px #ffffff;
 }
 
-#title-movie {
+#title_movie {
     align-items: center;
     color: #fafafa;
     display: flex;

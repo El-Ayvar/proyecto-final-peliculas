@@ -1,17 +1,17 @@
-const btnSearch = document.querySelector("#search-btn");
+const btnSearch = document.querySelector("#search_btn");
 const resultado = document.querySelector('#resultado');
 const loader = document.querySelector('#loader');
 
-document.getElementById("pelicula-input").addEventListener("keypress", function(event) {
+document.getElementById("pelicula_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-        document.getElementById("search-btn").click();
+        document.getElementById("search_btn").click();
     }
 })
 
 const searchPelicula = () => {
-    const peliculaName = document.querySelector("#pelicula-input").value.trim();
+    const peliculaName = document.querySelector("#pelicula_input").value.trim();
     if (!peliculaName) {
-        document.querySelector("#pelicula-info").innerHTML = `<p id="Error-ingresa">Por favor ingresa un nombre de película</p>`;
+        document.querySelector("#pelicula_info").innerHTML = `<p id="Error_ingresa">Por favor ingresa un nombre de película</p>`;
         return;
     }
 
@@ -37,7 +37,7 @@ const searchPelicula = () => {
         showPelicula(data.results[0]);
     })
     .catch(error => {
-        document.querySelector("#pelicula-info").innerHTML = `<p id="mensaje-error">${error.message}</p>`;
+        document.querySelector("#pelicula_info").innerHTML = `<p id="mensaje_error">${error.message}</p>`;
     });
 };
 
@@ -52,9 +52,9 @@ function showPelicula(pelicula) {
     setTimeout(() => {
         loader.classList.add('hidden');
 
-        const peliculaInfo = document.querySelector("#pelicula-info");
-        const banner = document.querySelector("#movie-banner");
-        const poster = document.querySelector("#movie-poster");
+        const peliculaInfo = document.querySelector("#pelicula_info");
+        const banner = document.querySelector("#movie_banner");
+        const poster = document.querySelector("#movie_poster");
 
         const posterUrl = pelicula.poster_path 
             ? `${baseImageUrl}${pelicula.poster_path}` 
@@ -74,16 +74,16 @@ function showPelicula(pelicula) {
         
 
         peliculaInfo.innerHTML = `
-            <h2 id="title-movie">${pelicula.title.toUpperCase()}</h2>
-            <main id="box-complet"> <div id="box-informacion">
-            <p class="info-movie"><span class="sub-movie">Título original: </span> ${pelicula.original_title}</p>
-            <p class="info-movie"><span class="sub-movie">Año: </span> ${pelicula.release_date ? pelicula.release_date.split("-")[0] : 'Desconocido'}</p>
-            <p class="info-movie"><span class="sub-movie">Popularidad: </span> ${pelicula.popularity}</p>
-            <p class="info-movie"><span class="sub-movie">Calificación: </span> ${pelicula.vote_average}/10</p>
-            <p class="info-movie"><span class="sub-movie">Genero: </span> ${pelicula.gen}/10</p>
-            <p id="sinopsis" class="info-movie"><span class="sub-movie">Sinopsis: </span> ${pelicula.overview || 'No disponible'}</p> </div>
-            <div id="box-banner"> <img id="banner" src="${bannerUrl}" alt="Banner de ${pelicula.title}"> </div>
-            <div id="box-poster"> <img id="poster" src="${posterUrl}" alt="Poster de ${pelicula.title}"> </div> </main> 
+            <h2 id="title_movie">${pelicula.title.toUpperCase()}</h2>
+            <main id="box_complet"> <div id="box_informacion">
+            <p class="info_movie"><span class="sub_movie">Título original: </span> ${pelicula.original_title}</p>
+            <p class="info_movie"><span class="sub_movie">Año: </span> ${pelicula.release_date ? pelicula.release_date.split("-")[0] : 'Desconocido'}</p>
+            <p class="info_movie"><span class="sub_movie">Popularidad: </span> ${pelicula.popularity}</p>
+            <p class="info_movie"><span class="sub_movie">Calificación: </span> ${pelicula.vote_average}/10</p>
+            <p class="info_movie"><span class="sub_movie">Genero: </span> ${pelicula.gen}/10</p>
+            <p id="sinopsis" class="info-movie"><span class="sub_movie">Sinopsis: </span> ${pelicula.overview || 'No disponible'}</p> </div>
+            <div id="box_banner"> <img id="banner" src="${bannerUrl}" alt="Banner de ${pelicula.title}"> </div>
+            <div id="box_poster"> <img id="poster" src="${posterUrl}" alt="Poster de ${pelicula.title}"> </div> </main> 
         `;
     }, 1500);
 }
